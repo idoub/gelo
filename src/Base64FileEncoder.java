@@ -153,10 +153,3 @@ public class Base64FileEncoder {
 	      System.out.println ("\t-lt <filesize>\tset a maximum filesize to convert in KB");
 	}
 }
-
-//every 5KB sent requires about 1.75KB Overhead (about 35% overhead)
-//therefore, to calculate whether it is worth encoding
-//OF = Original Filesize
-//NF = New Filesize
-//
-// OF*1.35 < NF
